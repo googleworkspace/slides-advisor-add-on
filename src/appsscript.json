@@ -1,0 +1,38 @@
+{
+  "timeZone": "America/Denver",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Slides",
+        "serviceId": "slides",
+        "version": "v1"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "43",
+        "developmentMode": false
+      }
+    ]
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/presentations.currentonly",
+    "https://www.googleapis.com/auth/presentations.readonly",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Slides Advisor",
+      "logoUrl": "https://raw.githubusercontent.com/webdog/octicons-png/main/black/eye.png"
+    },
+    "slides": {
+      "homepageTrigger": {
+        "runFunction": "onHomepageOpened"
+      }
+    }
+  }
+}
